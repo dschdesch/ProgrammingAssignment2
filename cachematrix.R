@@ -31,7 +31,7 @@ cacheSolve <- function(x, ...) {
         data <- x$get()
         if(!is.null(xinv)){
         	message('inverse has already been cached')
-        	xinv
+        	return(xinv)
         }
         
         xinv <- solve(data)
